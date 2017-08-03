@@ -1,0 +1,36 @@
+<% include partials/header %>
+
+
+<div class = "ui  main text container segment">
+<div class="ui huge header">Add a new Campground</div>
+    <!--<h1 style="text-align:center">Add a new Campground</h1>-->
+
+
+<form class="ui form" action="/blogs" method="POST">
+    
+    <div class="field">
+        <label>Title</label>
+         <input  type="text" name="blog[title]" placeholder="Blog title ">    
+    </div>
+    
+    <div class="field">
+        <label>Image URL</label>
+        <input  type="text" name="blog[image]" placeholder="Image URL ">       
+    </div>
+    
+    <div class="field">
+        <label>Body </label>
+        <textarea name="blog[body]" placeholder="Content of your blog"></textarea>    
+    </div>
+    
+    <input class="ui default teal button" type="submit">
+    
+</form>
+
+</div>
+
+<a href="/blogs">Go Back</a>
+
+
+
+<% include partials/footer %>
